@@ -55,7 +55,7 @@ footer{
     text-align: center;
     clear: both;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .holder{
@@ -96,6 +96,51 @@ h2{
 .testimonio .autor{
     font-size: 14px;
 }
+
+/* Estilos para la seccion nosotros */
+
+.historia{
+    font-size: 12px;
+}
+
+.personas{
+    display: flex;
+    justify-content: space-between;
+}
+.persona{
+    width: 18%;
+    border: 1px solid  #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+.persona img{
+    border-radius: 50%;
+    width: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin-bottom: 15px;
+}
+
+.persona h5, 
+.persona h6{
+    margin: 0;
+    color: #2e64a1;
+    font-weight: normal;
+}
+.persona h5{
+    font-style: italic;
+    font-size: 13px;
+}
+.persona p{
+    font-size: 12px;
+    color: #565656;
+    text-align: center;
+}
+
+/* fin de nosotros */
+
+
 
 
 
