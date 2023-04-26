@@ -54,15 +54,48 @@ footer{
     padding: 48px;
     text-align: center;
     clear: both;
-    margin-top: 30px ;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .holder{
     width: 960px;
     margin: auto;
 }
+h2{
+    color: #2e64a1;
+    font-weight: 400;
+}
+.columnas{
+    display: flex;
+}
+.bienvenidos{
+    width: 75%;
+    padding-right: 30px;
+}
+.testimonios{
+    width: 25%;
+}
+.bienvenidos p{
+    font-size: 24px;
+}
 
+.testimonio{
+    background-color: #ddd;
+    padding: 16px;
+}
 
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    display: block;
+    margin: 16px 0;
+}
+
+.testimonio .autor{
+    font-size: 14px;
+}
 
 
 
