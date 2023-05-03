@@ -59,12 +59,17 @@ footer{
 }
 
 .holder{
-    width: 960px;
+    max-width: 960px;
     margin: auto;
+    padding: 20px;
 }
 h2{
     color: #2e64a1;
     font-weight: 400;
+}
+
+.homeimg img{
+    max-width: 100%;
 }
 .columnas{
     display: flex;
@@ -140,7 +145,141 @@ h2{
 
 /* fin de nosotros */
 
+/* Inicio de contacto */
 
+.contacto{
+    display: flex;
+    gap: 0px;
+}
+.contacto div{
+    width: 100%;
+}
 
+.contacto .datos{
+    font-size: 14px ;
+}
+.datos p{
+    font-size: 13px ;
+    list-style: none;
+}
 
+.datos ul li{
+    font: size 13px;
+}
 
+.formulario p{
+    display: flex;
+}
+
+.formulario p label{
+    min-width: 80px;
+}
+
+.formulario p input,
+.formulario p textarea{
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 6px;
+    font-size: 14px;
+}
+
+.formulario p textarea{
+    resize: none;
+    height: 120px;
+}
+
+.formulario p label{
+    display: flex;
+    align-items: center;
+}
+
+.arriba{
+    align-items: start;
+}
+
+.formulario input[type="submit"]{
+    background-color: #6da9ed ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: white;
+    width: auto;
+    padding: 6px 20px;
+    margin-left: 80px;
+    /* position: relative;
+    left: 80px; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.formulario input[type="submit"]:hover{
+    background-color: #2e64a1;
+}
+
+@media screen  and (max-width:550px) {
+
+    .columnas{
+        flex-direction: column;
+        padding: 0 16px;
+    }
+    .bienvenidos,
+    .testimonios{
+        width: 100%;
+    }
+
+    .testimonio{
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .bienvenidos p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .personas{
+        flex-wrap: wrap;
+    }
+
+    .persona{
+        width: 30%;
+        width: 47%;
+        margin-bottom: 10px;
+    }
+
+    .persona p{
+        text-align: center;
+    }
+
+    .contacto{
+        flex-direction: column-reverse;
+        /* flex-direction: column; */
+    }
+
+    .formulario p{
+        display: block;
+    }
+    .formulario p input,
+    .formulario p textarea{
+        width: 95%;
+    }
+
+    .formulario input[type="submit"]{
+        margin-left: 420px;
+    }
+    
+    header .holder{
+        display: flex;
+        justify-content: center;
+    }
+    header .logo img{
+        max-width: 80px;
+    }
+
+    header h1{
+        bottom: 20px;
+    }
+    nav ul.holder{
+       flex-direction: column;
+       padding: 0;
+    }
+}
